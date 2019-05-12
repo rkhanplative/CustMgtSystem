@@ -1,0 +1,107 @@
+td{
+    text-align:center;
+    border-radius:2px;
+    border-style:solid;
+    border-width:thin;
+}
+th{
+    font-family:"Roboto";
+}
+div.userInput{
+    font-size: 20px;
+}
+button.login{
+    background-color:#0198E1;
+    border-radius: 10px;
+    color:#ffffff;
+    font-size: 20px;
+    font-family: Roboto;
+    position: relative;
+    margin-left: 320px;
+    padding: 10px 20px;
+}
+div.login{
+    border-color:black;
+    background-color:#f5f5f5;
+    margin:auto;    
+    height:400px;
+    width:400px;
+    border-style:solid;
+    text-align:center;
+    border-radius:10px;
+    margin-top: 10%;
+    padding:15px;
+    border-width:thin;
+    box-shadow:5px 5px black;
+}
+div.choice{
+    width:320px;
+    height:30px;
+    border-style: transparent;
+    padding: 15px;
+    border-radius:20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+div.choice:hover{
+    background-color:#f1f3f4;
+}
+input[type=text],input[type=password]{
+    width:100%;
+    border-radius:2px;
+    border-style:solid;
+    border-width:thin;
+}
+div.selectedChoice{
+    width:320px;
+    height:30px;
+    border-style: transparent;
+    padding: 15px;
+    border-radius:20px;
+    font-weight: bold;
+    font-size: 25px;
+    background-color:#e6f2ff;
+    color: #1967d2;
+}
+div.header{
+    font-weight:bold;
+    color:#5f6368;
+    padding:10px;
+    font-size:30px;
+    text-align:left;
+    border-style:transparent;
+    height:44px;
+    background-color:#f1f3f4;
+    border-radius:10px;
+    margin-right:150px;
+    margin-top:10px;
+}
+div.body{
+    position:absolute;
+    text-align:center;
+    margin-left: 360px;
+    top:92px;width:66%;
+    height:80%;
+    border-radius:10px;
+    border-style:solid;
+    border-width:thin;
+    padding: 5px;
+    border-color:#7a7a7a;
+    background-color:#fafafa;
+    overflow-y:scroll;  
+     box-shadow:3px 3px black;
+}
+body{
+    font-family: 'Roboto Thin';
+    
+}
+#logout{
+    position:absolute;
+    right:20px;top:10px;
+    font-size:60px;
+    color:#5f6368;
+}
+div.menu{
+    position: relative; 
+    width:420px;
+}

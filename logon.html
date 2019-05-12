@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+<html>
+    <title>Login Page</title>
+    <body class = "logon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <div class = "login">
+            <h3 style="text-align:left;font-size:30px;"><i class="material-icons" style="font-size:30px;">person</i>  Enter User Info</h3>
+            <br>
+                <div class = "userInput">
+                Username <input style = "width:70%;font-size:18px;border-radius:5px;border-style:transparent;font-family:'Roboto Condensed';"  type="text" id="username" value = "">
+            </div>
+            <br>
+            <br>
+                  <div class = "userInput">
+                  Password <input style = "width:70%;font-size: 18px;border-radius:5px;border-style:transparent;font-family:'Roboto Condensed';" type="password" id="password" value = "">
+            </div>
+            <br>
+            <div id = "errorMSG" style = "color:#A52A2A	"><br></div>
+            <br>
+            <input style = "text-align:left;" class = "data" accept = ".csv" id = "data" type = "file" value = "" onchange = "handleFiles(this.files)">
+            <br>
+             <br>
+            <br>
+            <br>
+            <br>
+             <button class = "login" onclick="submission()">OK</button>
+            <br>
+             <div>
+           <br>
+        </div>
+        <br> 
+        <script src = "script.js"></script>
+    </body>
+</html>
