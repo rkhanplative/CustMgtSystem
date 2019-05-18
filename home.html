@@ -1,40 +1,23 @@
 <DOCTYPE! html>
 <html>
     <title>Home</title>
-    <head>
+     <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+         <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
          <script src = "script.js"></script>
-        <div class = "header">
-            <i class="material-icons">supervised_user_circle</i>
-            Customer Management System
-        </div>
-        <i id = "logout" class="material-icons" onclick = "logout()">exit_to_app</i>
-        <br>
-        <div class = "menu">
-        <div class = "selectedChoice">
-            <i class="material-icons">home</i>
-            Home    
-        </div>
-        <div class = "choice" onclick = "addCust()">
-            <i class="material-icons">create</i>
-            Add User
-        </div>
-        <div class = "choice" onclick = "deleteCust()">
-            <i class="material-icons">delete_outline</i>
-            Delete User
-        </div>
-        <div class = "choice" onclick = "findCust()">
-            <i class="material-icons">search</i>
-            Find User
-        </div>
-        </div>
-        <div id = "bodyText" class = "body"><h1>Enter Range:&ensp;<input type = 'text' id = 'rangeText' value = ''style="width:200px;font-size:30px;font-family:'Roboto Thin';"><button class = "login" onclick='printTable(rangeText.value)'>OK</button></h1> 
-         <div id = "table"></div>
-        </div>
-    </body> 
+    </head>
+    <body class  = "body" onload = "document.getElementById('body').innerHTML = 'Welcome Back, '+userLogIn()';" >
+    <div id = "body "class = "body" style = "top:10%;right:20%;position:absolute;height:75%;width:60%;color:white;border-style:solid;border-width:thick;border-color:#2b1d42;font-family:'Arizonia';font-size:100px;text-align:center;background-color:#17181F;opacity:0.8;border-radius:5px;"><br>Welcome Back!</div>
+     <div class = "loginButton" onclick = "logout()" style = "color:white;font-weight:bolder;font-size:20px;text-align:center;right:10px;top:10px;position:absolute;border-radius:20px;width:100px;height:30px;padding:10px;border-style:solid;border-width:thick;border-color:white;">Log Out</div>
+      <div class = "footer" style = "background-color:#17181F;width:100%;height:50px;position:absolute;left:0px;bottom:0px;opacity:0.6;border-radius:2px 2px 0px 0px;"></div>
+        <div class = "pageButton" onclick = "home()" style = "border-radius: 5px 5px 0px 0px;background-color:#2b1d42;color:white;font-weight:900;font-size:25px;text-align:center;right:10px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Home</div>
+        <div class = "pageButton" onclick = "addCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#4a2f48;color:white;font-weight:900;font-size:25px;text-align:center;right:150px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Create</div>
+        <div class = "pageButton" onclick = "findCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#8f3d4b;color:white;font-weight:900;font-size:25px;text-align:center;right:290px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Search</div>
+        <div class = "pageButton" onclick = "findCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#f3b88d
+;color:white;font-weight:900;font-size:25px;text-align:center;left: 10px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Database</div>
+     </body>
 </html>
