@@ -10,6 +10,9 @@ th{
 div.userInput{
     font-size: 20px;
 }
+div.pageButton:hover{
+    background-color:#f1f3f4;
+    }
 button.login{
     background-color:#0198E1;
     border-radius: 10px;
@@ -65,35 +68,24 @@ div.selectedChoice{
 }
 div.header{
     font-weight:bold;
-    color:#5f6368;
+    color:#C5C6C7;
     padding:10px;
     font-size:30px;
     text-align:left;
     border-style:transparent;
     height:44px;
-    background-color:#f1f3f4;
-    border-radius:10px;
-    margin-right:150px;
-    margin-top:10px;
+    background-color:#fafafa;
+    width:100%;
+    position: relative;
+    margin-top:0px;
+    margin-left:0px;
 }
 div.body{
-    position:absolute;
-    text-align:center;
-    margin-left: 360px;
-    top:92px;width:66%;
-    height:80%;
-    border-radius:10px;
-    border-style:solid;
-    border-width:thin;
-    padding: 5px;
-    border-color:#7a7a7a;
-    background-color:#fafafa;
-    overflow-y:scroll;  
-     box-shadow:3px 3px black;
 }
 body{
-    font-family: 'Roboto Thin';
-    
+    font-family: 'Open Sans';
+    background-image:url(photo.jpg);
+    background-size: cover;
 }
 #logout{
     position:absolute;

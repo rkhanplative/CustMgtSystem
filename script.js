@@ -38,8 +38,8 @@ function handleFiles(files) {
         var output = "<table id = 'info' style = 'width:100%'><tr><th>Id</th><th>FirstName</th><th>LastName</th><th>PhoneNbr</th><th>StreetAddress</th><th>City</th><th>State</th><th>Zip</th></tr>";
       var string = "";
       var rangeArr = range.split("-");
-      var start = parseInt(rangeArr[0])-1;
-      var end = parseInt(rangeArr[1]);
+      var start = parseInt(rangeArr[0]);
+      var end = parseInt(rangeArr[1])+1;
       var arr = [];
       for(var i = start;i<end;i++){
           output+="<tr>";
@@ -86,7 +86,7 @@ function logout(){
 }
 function add(){
     var custInfo = id.value+","+firstName.value+","+lastName.value+","+phoneNbr.value+","+streetAddr.value+","+city.value+","+state.value+","+zip.value;
-    localStorage.setItem(Number(id.value),custInfo);
+    localStorage.setItem(Number(id.value)-1,custInfo);
     alert("Customer Added");
 }
 function submission(){
