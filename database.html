@@ -1,6 +1,6 @@
 <DOCTYPE! html>
 <html>
-    <title>Home</title>
+    <title>Database</title>
      <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -10,14 +10,13 @@
          <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
          <script src = "script.js"></script>
     </head>
-    <body class  = "body" onload = "document.getElementById('body').innerHTML = 'Welcome Back, '+userLogIn()';" >
-    <div id = "body" class = "body"><br>Welcome Back!</div>
+    <body class  = "body" onload = "databaseStart()">
+    <div id = "body" style = "width:80%;right:10%;padding:10px;" class = "body"><br></div>
      <div class = "loginButton" onclick = "logout()">Log Out</div>
       <div class = "footer"></div>
-        <div class = "pageButton" style = "right:10px;">Home</div>
+        <div class = "pageButton" onclick = "home()" style = "right:10px;">Home</div>
         <div class = "pageButton" onclick = "addCust()" style = "right:150px;background-color:#4a2f48;">Create</div>
         <div class = "pageButton" onclick = "findCust()" style = "right:290px;background-color:#8f3d4b;">Search</div>
-        <div class = "pageButton" onclick = "window.location.href = 'database.html'+'?para1='+userLogIn();
-" style = "left:10px;background-color:#008080" style = "left:10px;background-color:#008080">Database</div>
+        <div class = "pageButton" style = "left:10px;background-color:#008080">Database</div>
      </body>
 </html>

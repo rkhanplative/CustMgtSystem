@@ -11,8 +11,8 @@
          <script src = "script.js"></script>
     </head>
     <body class  = "body">
-    <div id = "body "class = "body" style = "top:10%;right:20%;position:absolute;height:75%;width:60%;color:white;border-style:solid;border-width:thick;border-color:#2b1d42;font-family:'Open Sans';font-size:100px;text-align:center;background-color:#17181F;opacity:0.95;border-radius:5px;oveflow-y:scroll;"><h1 style = "text-align:left;font-size:30px;">&ensp;Create New Customer</h1>
-            <form style = "text-align:left;font-size:18px;width:90%;padding:20px;position:absolute;height:75%;overflow:scroll;;">
+    <div id = "body "class = "body" style = "height:75%;width:60%;oveflow-y:scroll;"><h1 style = "text-align:left;font-size:30px;">&ensp;Create New Customer</h1>
+            <form style = "text-align:left;font-size:18px;width:90%;padding:20px;position:absolute;height:70%;overflow:scroll;;">
                 Id: <input type = "text" id = "id"><br><br>
                 First Name: <input placeholder = "Your first name..." type = "text" id = "firstName"><br><br>
                 Last Name: <input placeholder = "Your last name..." type = "text" id = "lastName"><br><br>
@@ -73,14 +73,14 @@
                     <option value="WY">WY</option>
                 </select><br><br>
                 Zipcode: <input type = "text" id = "zip"><br><br>
-                <button class = login style = "position:absolute;right:0px;" onclick = "add()">Create</button>       
-            </form></div>
-     <div class = "loginButton" onclick = "logout()" style = "color:white;font-weight:bolder;font-size:20px;text-align:center;right:10px;top:10px;position:absolute;border-radius:20px;width:100px;height:30px;padding:10px;border-style:solid;border-width:thick;border-color:white;">Log Out</div>
-      <div class = "footer" style = "background-color:#17181F;width:100%;height:50px;position:absolute;left:0px;bottom:0px;opacity:0.6;border-radius:2px 2px 0px 0px;"></div>
-        <div class = "pageButton" onclick = "home()" style = "border-radius: 5px 5px 0px 0px;background-color:#2b1d42;color:white;font-weight:900;font-size:25px;text-align:center;right:10px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Home</div>
-        <div class = "pageButton" onclick = "addCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#4a2f48;color:white;font-weight:900;font-size:25px;text-align:center;right:150px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Create</div>
-        <div class = "pageButton" onclick = "findCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#8f3d4b;color:white;font-weight:900;font-size:25px;text-align:center;right:290px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Search</div>
-        <div class = "pageButton" onclick = "findCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#f3b88d
-;color:white;font-weight:900;font-size:25px;text-align:center;left: 10px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Database</div>
+            </form><button class = login style = "position:absolute;right:10px;bottom:10px;" onclick = "add()">Create</button>       
+</div>
+     <div class = "loginButton" onclick = "logout()">Log Out</div>
+      <div class = "footer"></div>
+        <div class = "pageButton" onclick = "home()" style = "right:10px;">Home</div>
+        <div class = "pageButton"  style = "right:150px;background-color:#4a2f48;">Create</div>
+        <div class = "pageButton" onclick = "findCust()" style = "right:290px;background-color:#8f3d4b;">Search</div>
+        <div class = "pageButton" onclick = "window.location.href = 'database.html'+'?para1='+userLogIn();
+" style = "left:10px;background-color:#008080" style = "left:10px;background-color:#008080">Database</div>
      </body>
 </html>

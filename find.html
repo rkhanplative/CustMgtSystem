@@ -10,14 +10,41 @@
          <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
          <script src = "script.js"></script>
     </head>
-    <body class  = "body" onload = "document.getElementById('body').innerHTML = 'Welcome Back, '+userLogIn()';" >
-    <div id = "body "class = "body" style = "top:10%;right:20%;position:absolute;height:75%;width:60%;color:white;border-style:solid;border-width:thick;border-color:#2b1d42;font-family:'Arizonia';font-size:100px;text-align:center;background-color:#17181F;opacity:0.95;border-radius:5px;"><br></div>
-     <div class = "loginButton" onclick = "logout()" style = "color:white;font-weight:bolder;font-size:20px;text-align:center;right:10px;top:10px;position:absolute;border-radius:20px;width:100px;height:30px;padding:10px;border-style:solid;border-width:thick;border-color:white;">Log Out</div>
-      <div class = "footer" style = "background-color:#17181F;width:100%;height:50px;position:absolute;left:0px;bottom:0px;opacity:0.6;border-radius:2px 2px 0px 0px;"></div>
-        <div class = "pageButton" onclick = "home()" style = "border-radius: 5px 5px 0px 0px;background-color:#2b1d42;color:white;font-weight:900;font-size:25px;text-align:center;right:10px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Home</div>
-        <div class = "pageButton" onclick = "addCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#4a2f48;color:white;font-weight:900;font-size:25px;text-align:center;right:150px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Create</div>
-        <div class = "pageButton" onclick = "findCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#8f3d4b;color:white;font-weight:900;font-size:25px;text-align:center;right:290px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Search</div>
-        <div class = "pageButton" onclick = "findCust()" style = "border-radius: 5px 5px 0px 0px;background-color:#f3b88d
-;color:white;font-weight:900;font-size:25px;text-align:center;left: 10px;bottom:0px;position:absolute;width:100px;height:25px;padding:20px;">Database</div>
+    <body class  = "body">
+    <div id = "body"class = "body" style = "font-size:50px">Search By...<br>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'id'">ID<br><br><i style = "font-size:40px; " class="material-icons">person</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'fname'" style = "left:27%">First Name<br><br><i style = "font-size:40px; " class="material-icons">
+person_pin
+</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'lname'" style = "left:51%">Last Name<br><br><i style = "font-size:40px; " class="material-icons">
+person_pin
+</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'phone'" style = "left:75%">Phone Number<br><i style = "font-size:40px; "class="material-icons">
+local_phone
+</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'street'" style = "top:53%;">Street Address<br><i style = "font-size:40px; " class="material-icons">
+location_city
+</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'city'" style = "left:27%;top:53%;">City<br><br><i style = "font-size:40px; " class="material-icons">
+location_city
+</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'state'" style = "left:51%;top:53%;">State<br><br><i style = "font-size:40px; " class="material-icons">
+location_city
+</i></div>
+        <div class = "selectionButton" onclick = "searchBar();searchType = 'zip'" style = "left:75%;top:53%;">Zipcode<br><br><i style = "font-size:40px; " class="material-icons">
+location_city
+</i></div>
+
+
+
+
+     </div>
+     <div class = "loginButton" onclick = "logout()">Log Out</div>
+      <div class = "footer"></div>
+        <div class = "pageButton" onclick = "home()" style = "right:10px;">Home</div>
+        <div class = "pageButton" onclick = "addCust()" style = "right:150px;background-color:#4a2f48;">Create</div>
+        <div class = "pageButton" style = "right:290px;background-color:#8f3d4b;">Search</div>
+        <div class = "pageButton" onclick = "window.location.href = 'database.html'+'?para1='+userLogIn();
+" style = "left:10px;background-color:#008080" style = "left:10px;background-color:#008080">Database</div>
      </body>
 </html>
