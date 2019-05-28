@@ -32,7 +32,7 @@ function runScript(e) {
     }
 }
 function searchBar(){
-    document.getElementById('body').innerHTML = '<i style = "font-size:40px;left:20px;position:absolute;top:20px;"class="material-icons">search</i><input id = "searchVal" value = "" type = "text" onkeypress="return runScript(event)" placeholder = "Search Database" style = "position:absolute;top:20px;width:80%;height:40px;background-color:white;left:70px;font-size:24px;"><div id = "custInfo" style = "text-align:left;position:absolute;height:80%;width:90%;top:10%;font-size:20px;padding:5%;"></div><button style = "position:absolute;bottom:5%;left:5%;margin-left:0px;" class = "login" onclick = "findCust()">Back</button>';
+    document.getElementById('body').innerHTML = '<i style = "font-size:40px;left:20px;position:absolute;top:20px;"class="material-icons">search</i><input id = "searchVal" value = "" type = "text" onkeypress="return runScript(event)" placeholder = "Search Database" style = "position:absolute;top:20px;width:80%;height:40px;background-color:white;left:70px;font-size:24px;"><div id = "custInfo" style = "text-align:left;position:absolute;height:80%;width:90%;top:10%;font-size:20px;padding:5%;"></div><button style = "position:absolute;bottom:5%;left:5%;margin-left:0px;" class = "login" onclick = "findCust()">Back</button><button style = "position:absolute;bottom:5%;right:5%;margin-left:0px;" class = "login" onclick = "deleteCust()">Delete</button><button style = "position:absolute;bottom:5%;right:20%;margin-left:0px;" class = "login" onclick = "editCust()">Edit</button>'
 }
   function getAsText(fileToRead) {
     var reader = new FileReader();
